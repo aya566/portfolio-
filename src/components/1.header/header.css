@@ -1,0 +1,130 @@
+header.flex{
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+header nav{
+    background-color: rgb(39,39,42);
+    padding: 0.77rem 2rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px rgba(49,48,48,0.352);
+}
+.light header nav {
+    background-color:var(--secondary);
+}
+
+header ul.flex {
+    gap: 16px;
+}
+header ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+header ul li a:hover{
+    color: var(--blue);
+    opacity: 1;
+    font-size: 0.88rem;
+    transition: 0.2s;
+}
+header button{
+    font-size: 1.2rem;
+}
+header button.menu{
+    display: none;
+}
+/* iconnn */
+header .icon-menu , header .iconmode{
+    background-color: rgb(39,39,42);
+    height: 2.4rem;
+    width: 2.4rem;
+   justify-content: center;
+   text-align: center;
+   border-radius: 50%;
+   color: var(--subtitle);
+   border: 1px solid rgba(250, 128, 114, 0.255);
+   
+}
+.light header .iconmode{
+    background-color:var(--secondary);
+    color: rgb(244, 165, 96);
+}
+.light header .icon-menu{
+    background-color:var(--secondary);
+}
+header .icon-menu:hover , header .iconmode:hover{
+    color: var(--title);
+   border: 1px solid rgb(244, 165, 96);
+   transition: 0.2s;
+
+}
+.light header .iconmode:hover{
+    color: rgb(228, 125, 34);
+    background-color: rgba(73, 62, 62, 0.103);
+}
+header .icon-cross{
+    font-size: 1.3rem;
+    color: var(--subtitle);
+}header .icon-cross:hover{
+    font-size: 1.6rem;
+    color: crimson;
+    transition: 0.3s;
+    rotate: 180deg;
+}
+
+/* model */
+@keyframes bigger {
+    0% {scale: 0;}
+    60% {scale: 1.2; }
+    100% {scale: 1;}
+    
+}
+
+header .fixed{
+    position: fixed;
+    inset: 0; /* top w bottom w right w left == 0*/
+    background-color: rgba(40,40,48,0.91);
+    z-index: 11;
+    backdrop-filter: blur(4px); /* for background*/
+    /*filter: blur(4px);   for text*/
+
+}
+
+header .fixed ul.model{
+    animation: bigger 0.7s 1;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+}
+header .fixed ul.model li{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+header .fixed ul.model li:last-child{
+    border: none;
+}
+header .fixed ul.model li a{
+    font-size: 1rem;
+}
+header .fixed ul.model li:first-child{
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+}
+
+@media (max-width: 700px) {
+    header nav{
+        display: none;
+    }
+    header button.menu{
+        display: block;
+    }
+}

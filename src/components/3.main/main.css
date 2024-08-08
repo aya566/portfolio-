@@ -1,0 +1,118 @@
+main.flex{
+    gap: 3rem;
+    align-items: start;
+}
+main.flex section.rightsection{
+    flex-grow: 1; /* cuz n center el cards fe el shashat el small*/
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 2rem;
+    justify-content: center;
+}
+main.flex section.leftsection{
+    flex-direction: column;
+    gap: 10px;
+}
+main.flex section.leftsection button{
+    background-color: rgba(36,37,46,1);
+    width: 11rem;
+    text-align: center;
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 5px;
+
+}
+main.flex section.leftsection button:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+main.flex section.leftsection button.active{
+    opacity: 1;
+    border: 1px solid var(--blue);
+  
+    font-weight: bold;
+    padding: 0.8rem 0;
+    letter-spacing: 0.6px;
+
+}
+.light main.flex section.leftsection button.active{
+    border: 1px solid rgba(244, 165, 96, 0.464);
+}
+.card{
+    border: 1px solid rgba(93,188,252,0.3);
+    border-radius: 5px;
+}
+.light .card{
+    border: 1px solid rgba(244, 165, 96, 0.104);
+
+}
+.card:hover{
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    transition: 0.3s;
+    scale: 1.01;
+    cursor: pointer;
+}
+.light .card:hover{
+    border: 1px solid rgba(244, 165, 96, 0.464);
+
+}
+.card img{
+    border-radius: 5px;
+}
+.card .box{
+    padding: 1rem 0.4rem;
+}
+.card .box .title{
+    color: var(--title);
+    text-transform: capitalize;
+}
+.card .box .subtitle{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+.card .box .icons{
+    justify-content: space-between;
+}
+.card .icon-link , .card .icon-github{
+    color: var(--subtitle);
+    font-size: 1.2rem;
+}
+.card .icon-link:hover , .card .icon-github:hover{
+ color: var(--title);
+ font-size: 1.3rem;
+ transition: 0.3s;
+ cursor: pointer;
+}
+.card a.link{
+    color: var(--blue);
+    font-size: 0.9rem;
+    margin-right: 12px;
+}
+@media (max-width: 600px) {
+    main.flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    main.flex section.leftsection{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    main.flex section.leftsection button{
+        
+        width: 7rem;
+       
+        padding: 0.9rem 0;
+        font-size: 0.9rem;
+       
+    
+    }
+    
+    
+}

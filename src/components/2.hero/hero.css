@@ -1,0 +1,62 @@
+section.hero{
+    margin-top: 3rem;
+}
+
+section.hero .leftsection{
+    flex-grow: 1;
+    margin-top: -9rem;
+}
+section.hero .avatar{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 1px solid rgb(244, 165, 96);
+    padding: 2px;
+    box-shadow: 2px 2px 40px rgba(128, 128, 128, 0.3) inset;
+    
+}
+section.hero .icon-verified{
+    color: var(--blue);
+}
+section.hero h1.title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+section.hero p.subtitle{
+    color: var(--subtitle);
+    margin-bottom: 32px;
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+}
+section.hero .icons{
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+section.hero .icons .icon:hover{
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--title);
+}
+section.hero .animation{
+    height: 750px;
+    width: 1500px;
+    margin-right: -2rem;
+}
+.lottanimation{
+    margin-top: 8rem;
+   
+}
+@media (max-width: 700px) {
+    section.hero .leftsection{
+        margin-top: 0rem;
+    }
+}
+@media (max-width: 1300px) {
+    section.hero .leftsection{
+        margin-top: 0rem;
+    }
+}
